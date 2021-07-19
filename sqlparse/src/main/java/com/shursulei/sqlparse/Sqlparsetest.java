@@ -19,7 +19,7 @@ public class Sqlparsetest {
     }
 
     public static void main(String[] args) {
-        String sql = "select * from user order by id;";
+        String sql = "select * from user where pt='20210510' and id= 4 order by id;";
         String result = SQLUtils.format(sql, JdbcConstants.ODPS);
         List<SQLStatement> sqlStatementList = getSQLStatementList(sql);
         //默认为一条sql语句
@@ -35,7 +35,7 @@ public class Sqlparsetest {
         System.out.println("条件\t\t\t" + visitor.getConditions());
         System.out.println("group by\t\t" + visitor.getGroupByColumns());
         System.out.println("order by\t\t" + visitor.getOrderByColumns());
-
-
+        System.out.println("分区 \t\t"+visitor.getParameters());
+        System.out.println(visitor.getAggregateFunctions());
     }
 }

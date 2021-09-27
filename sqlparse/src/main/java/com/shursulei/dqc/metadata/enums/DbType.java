@@ -1,4 +1,4 @@
-package com.shursulei.dqc.metadata;
+package com.shursulei.dqc.metadata.enums;
 
 /**
  * @author hanfeng
@@ -10,7 +10,6 @@ public enum DbType {
     POSTGRESQL("postgresql"),
     ODPS("odps");
     private String type;
-
     DbType(String type) {
         this.type = type;
     }

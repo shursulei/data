@@ -7,7 +7,8 @@ package com.shursulei.dqc.metadata;
  */
 public enum DbType {
     MYSQL("mysql"),
-    ODPS("ODPS");
+    POSTGRESQL("postgresql"),
+    ODPS("odps");
     private String type;
 
     DbType(String type) {

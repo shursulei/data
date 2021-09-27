@@ -23,26 +23,26 @@
         </plugins>
     </build>
     <dependencies>
-
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.21</version>
         </dependency>
         <dependency>
             <groupId>com.aliyun.odps</groupId>
             <artifactId>odps-sdk-core</artifactId>
+            <version>0.36.4-public</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>com.aliyun.odps</groupId>-->
-<!--            <artifactId>odps-jdbc</artifactId>-->
-<!--            <version>3.2.8</version>-->
-<!--            &lt;!&ndash;            <classifier>jar-with-dependencies</classifier>&ndash;&gt;-->
-<!--        </dependency>-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>RELEASE</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.14</version>
         </dependency>
     </dependencies>
 

@@ -22,8 +22,8 @@ public class TripCalc {
 
     public static void main(String[] args) {
         // 设置读入路径
-        String filePath = "/Users/junzhu/Downloads/2月出差原始数据.xlsx";
-        String filePath2 = "/Users/junzhu/Downloads/2月出差数据筛选结果.xlsx";
+        String filePath = "/Users/apple/Downloads/202109出差源数据.xlsx";
+        String filePath2 = "/Users/apple/Downloads/202109出差源数据结果.xlsx";
         List<String> columns = Arrays.asList("发起人姓名", "发起人部门", "成本中心", "发票抬头");
 
         // 读取Excel
